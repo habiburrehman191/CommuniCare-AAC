@@ -1,0 +1,18 @@
+{
+  "status": "PASSED",
+  "parity_sample_count": 483,
+  "top1_agreement_count": 483,
+  "top1_agreement_percentage": 100.0,
+  "max_absolute_probability_difference": 2.980232238769531e-07,
+  "mean_absolute_probability_difference": 9.553857444297032e-09,
+  "per_class_sample_representation": {
+    "water": 60,
+    "help": 62,
+    "hungry": 60,
+    "need": 60,
+    "want": 60,
+    "hello": 60,
+    "thankyou": 60,
+    "NO_SIGN": 61
+  }
+}

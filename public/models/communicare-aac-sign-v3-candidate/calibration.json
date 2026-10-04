@@ -1,0 +1,48 @@
+{
+  "candidate": "B",
+  "modelName": "Conv1D(48) + GRU(64)",
+  "calibratedAt": "2026-10-03T21:14:29Z",
+  "globalConfidenceThreshold": 0.85,
+  "marginThreshold": 0.10,
+  "classSpecificThresholds": {
+    "water": 0.85,
+    "help": 0.85,
+    "hungry": 0.85,
+    "need": 0.85,
+    "want": 0.85,
+    "hello": 0.85,
+    "thankyou": 0.85,
+    "NO_SIGN": 0.85
+  },
+  "temporalStability": {
+    "requiredConsecutiveWindows": 3,
+    "inferenceStrideFrames": 3,
+    "inferenceStrideMs": 100,
+    "cooldownFrames": 15,
+    "cooldownMs": 500
+  },
+  "rejectionRules": {
+    "noSignRule": "If top1 class is NO_SIGN, never surface candidate.",
+    "confidenceRule": "top1 confidence must be >= threshold (0.85)",
+    "marginRule": "top1 - top2 probability difference must be >= 0.10",
+    "stabilityRule": "Must observe 3 consecutive matching accepted windows before candidate is surfaced."
+  },
+  "validationPerformance": {
+    "streamingPrecision": 0.9720,
+    "streamingRecall": 0.9811,
+    "noSignFalseActivation": 0.1875,
+    "realSignRejection": 0.0189,
+    "meanLatencySec": 1.031,
+    "p95LatencySec": 1.200,
+    "weakestClass": "thankyou",
+    "weakestRecall": 0.875
+  },
+  "tuningSplit": "Grouped sequence-level validation (122 sequences, 15%) on genuine signers (signer-01..signer-04)",
+  "rationale": "Safest operating configuration selected from calibration sweep: suppresses NO_SIGN false activation to 18.75% (<20% target) with 97.20% precision, 98.11% recall, and ~1.03s latency.",
+  "phase": "PHASE_2M_CORRECTION_SAFEST",
+  "safetyImprovement": {
+    "noSignFalseActivationBefore": 0.375,
+    "noSignFalseActivationAfter": 0.1875,
+    "deltaFalseActivation": -0.1875
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "modelName": "communicare-aac-sign-v1",
+  "version": "1.0.0",
+  "architecture": "GRU",
+  "classes": [
+    "water",
+    "help",
+    "hungry",
+    "need",
+    "want",
+    "hello",
+    "thankyou",
+    "NO_SIGN"
+  ],
+  "classCount": 8,
+  "sequenceLength": 60,
+  "featuresPerFrame": 126,
+  "featureSchema": "wrist_normalized_v1",
+  "inputShape": [
+    1,
+    60,
+    126
+  ],
+  "outputShape": [
+    1,
+    8
+  ],
+  "trainingSignerCount": 2,
+  "trainingSampleCount": 483,
+  "evaluationMethod": "Leave-One-Signer-Out prototype evaluation across signer-01 and signer-02",
+  "selectedArchitectureReason": "GRU achieved superior cross-signer macro F1 (0.5228 vs 0.4772) and cross-signer test accuracy (55.53% vs 51.78%) compared to LSTM, with a compact ~155 KB browser footprint and low parameter count (38,888).",
+  "onnxOpset": 17,
+  "inputName": "input_frames",
+  "outputName": "probabilities",
+  "operatorTypes": [
+    "And",
+    "Gemm",
+    "Less",
+    "Loop",
+    "Relu",
+    "Reshape",
+    "Slice",
+    "Softmax",
+    "Squeeze"
+  ],
+  "modelSizeBytes": 171736,
+  "modelSizeKb": 167.71,
+  "trainingDate": "2026-10-03",
+  "trainingValidationAccuracy": 0.9278
+}

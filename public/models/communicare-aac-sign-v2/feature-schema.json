@@ -1,0 +1,23 @@
+{
+  "version": "wrist_normalized_posvel_v2",
+  "description": "CommuniCare AAC Sign Recognition V2 feature schema with wrist-normalized position and velocity",
+  "sequenceLength": 24,
+  "featuresPerFrame": 252,
+  "positionFeatureCount": 126,
+  "velocityFeatureCount": 126,
+  "motionFeatureCount": 0,
+  "layout": {
+    "position": {
+      "leftHand": "indices 0..62 (21 landmarks x 3 coordinates)",
+      "rightHand": "indices 63..125 (21 landmarks x 3 coordinates)"
+    },
+    "velocity": {
+      "leftHand": "indices 126..188 (current_pos - prev_pos)",
+      "rightHand": "indices 189..251 (current_pos - prev_pos)"
+    }
+  },
+  "missingHandBehavior": "Zero values in both position and velocity if hand absent in current or adjacent frame",
+  "normalization": "wrist_normalized_v1 for position; velocities computed from wrist-normalized coordinates",
+  "fpsTarget": 30,
+  "historySeconds": 0.8
+}

@@ -1,0 +1,487 @@
+{
+  "config_name": "exp09_24frame_posvel_gru_resample",
+  "sequence_length": 24,
+  "feature_representation": "pos_vel",
+  "feature_dimension": 252,
+  "model_architecture": "GRU",
+  "window_strategy": "resample",
+  "parameter_count": 63400,
+  "history_duration_seconds": 0.8,
+  "inference_latency_ms": 168.50751799996942,
+  "run_a": {
+    "test_accuracy": 0.8041666666666667,
+    "macro_precision": 0.8274775733604257,
+    "macro_recall": 0.8041666666666667,
+    "macro_f1": 0.7737218665552383,
+    "weighted_f1": 0.7737218665552383,
+    "per_class_metrics": {
+      "water": {
+        "precision": 0.7631578947368421,
+        "recall": 0.9666666666666667,
+        "f1": 0.8529411764705882,
+        "support": 30
+      },
+      "help": {
+        "precision": 0.9354838709677419,
+        "recall": 0.9666666666666667,
+        "f1": 0.9508196721311475,
+        "support": 30
+      },
+      "hungry": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "support": 30
+      },
+      "need": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523,
+        "support": 30
+      },
+      "want": {
+        "precision": 0.9333333333333333,
+        "recall": 0.4666666666666667,
+        "f1": 0.6222222222222222,
+        "support": 30
+      },
+      "hello": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "support": 30
+      },
+      "thankyou": {
+        "precision": 0.5952380952380952,
+        "recall": 0.8333333333333334,
+        "f1": 0.6944444444444444,
+        "support": 30
+      },
+      "NO_SIGN": {
+        "precision": 0.8571428571428571,
+        "recall": 0.2,
+        "f1": 0.32432432432432434,
+        "support": 30
+      }
+    },
+    "no_sign_safety": {
+      "precision": 0.8571428571428571,
+      "recall": 0.2,
+      "f1": 0.32432432432432434,
+      "support": 30,
+      "false_sign_activations": 24,
+      "false_sign_activation_rate": 0.8,
+      "confusions": {
+        "help": 2,
+        "water": 9,
+        "thankyou": 2,
+        "need": 2,
+        "hello": 9
+      }
+    },
+    "real_sign_rejection": {
+      "count": 1,
+      "rate": 0.004761904761904762,
+      "breakdown": {
+        "help": 1
+      }
+    },
+    "confusion_matrix": [
+      [
+        29,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        29,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        14,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        1,
+        0,
+        25,
+        0
+      ],
+      [
+        9,
+        2,
+        0,
+        2,
+        0,
+        9,
+        2,
+        6
+      ]
+    ]
+  },
+  "run_b": {
+    "test_accuracy": 0.6049382716049383,
+    "macro_precision": 0.6776218972826615,
+    "macro_recall": 0.606434811827957,
+    "macro_f1": 0.6021432390294141,
+    "weighted_f1": 0.6010570412641568,
+    "per_class_metrics": {
+      "water": {
+        "precision": 0.7857142857142857,
+        "recall": 0.7333333333333333,
+        "f1": 0.7586206896551724,
+        "support": 30
+      },
+      "help": {
+        "precision": 0.7368421052631579,
+        "recall": 0.4375,
+        "f1": 0.5490196078431373,
+        "support": 32
+      },
+      "hungry": {
+        "precision": 0.47058823529411764,
+        "recall": 0.8,
+        "f1": 0.5925925925925926,
+        "support": 30
+      },
+      "need": {
+        "precision": 0.96,
+        "recall": 0.8,
+        "f1": 0.8727272727272727,
+        "support": 30
+      },
+      "want": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "support": 30
+      },
+      "hello": {
+        "precision": 0.6341463414634146,
+        "recall": 0.8666666666666667,
+        "f1": 0.7323943661971831,
+        "support": 30
+      },
+      "thankyou": {
+        "precision": 0.47368421052631576,
+        "recall": 0.3,
+        "f1": 0.3673469387755102,
+        "support": 30
+      },
+      "NO_SIGN": {
+        "precision": 0.36,
+        "recall": 0.5806451612903226,
+        "f1": 0.4444444444444444,
+        "support": 31
+      }
+    },
+    "no_sign_safety": {
+      "precision": 0.36,
+      "recall": 0.5806451612903226,
+      "f1": 0.4444444444444444,
+      "support": 31,
+      "false_sign_activations": 13,
+      "false_sign_activation_rate": 0.41935483870967744,
+      "confusions": {
+        "hello": 8,
+        "hungry": 1,
+        "help": 4
+      }
+    },
+    "real_sign_rejection": {
+      "count": 32,
+      "rate": 0.1509433962264151,
+      "breakdown": {
+        "water": 7,
+        "help": 3,
+        "hello": 2,
+        "thankyou": 10,
+        "want": 10
+      }
+    },
+    "confusion_matrix": [
+      [
+        22,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        7
+      ],
+      [
+        0,
+        14,
+        9,
+        0,
+        0,
+        6,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        24,
+        0,
+        0,
+        0,
+        6,
+        0
+      ],
+      [
+        5,
+        0,
+        0,
+        24,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        0,
+        10,
+        0,
+        4,
+        10
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        26,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        11,
+        0,
+        0,
+        0,
+        9,
+        10
+      ],
+      [
+        0,
+        4,
+        1,
+        0,
+        0,
+        8,
+        0,
+        18
+      ]
+    ]
+  },
+  "mean_accuracy": 0.7045524691358025,
+  "mean_macro_f1": 0.6879325527923262,
+  "mean_no_sign_recall": 0.39032258064516134,
+  "mean_no_sign_false_activation_rate": 0.6096774193548388,
+  "weakest_class": {
+    "label": "NO_SIGN",
+    "mean_recall": 0.39032258064516134
+  },
+  "mean_per_class_recall": {
+    "water": 0.85,
+    "help": 0.7020833333333334,
+    "hungry": 0.9,
+    "need": 0.9,
+    "want": 0.4,
+    "hello": 0.9333333333333333,
+    "thankyou": 0.5666666666666667,
+    "NO_SIGN": 0.39032258064516134
+  },
+  "combined_confusion_matrix": [
+    [
+      51,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      7
+    ],
+    [
+      0,
+      43,
+      9,
+      0,
+      0,
+      6,
+      0,
+      4
+    ],
+    [
+      0,
+      0,
+      54,
+      0,
+      0,
+      0,
+      6,
+      0
+    ],
+    [
+      5,
+      0,
+      0,
+      54,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      7,
+      0,
+      24,
+      0,
+      19,
+      10
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      56,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      15,
+      0,
+      1,
+      0,
+      34,
+      10
+    ],
+    [
+      9,
+      6,
+      1,
+      2,
+      0,
+      17,
+      2,
+      24
+    ]
+  ],
+  "top_confusion_pairs": [
+    {
+      "true_label": "want",
+      "predicted_label": "thankyou",
+      "count": 19
+    },
+    {
+      "true_label": "NO_SIGN",
+      "predicted_label": "hello",
+      "count": 17
+    },
+    {
+      "true_label": "thankyou",
+      "predicted_label": "hungry",
+      "count": 15
+    },
+    {
+      "true_label": "want",
+      "predicted_label": "NO_SIGN",
+      "count": 10
+    },
+    {
+      "true_label": "thankyou",
+      "predicted_label": "NO_SIGN",
+      "count": 10
+    },
+    {
+      "true_label": "help",
+      "predicted_label": "hungry",
+      "count": 9
+    },
+    {
+      "true_label": "NO_SIGN",
+      "predicted_label": "water",
+      "count": 9
+    },
+    {
+      "true_label": "water",
+      "predicted_label": "NO_SIGN",
+      "count": 7
+    },
+    {
+      "true_label": "want",
+      "predicted_label": "hungry",
+      "count": 7
+    },
+    {
+      "true_label": "help",
+      "predicted_label": "hello",
+      "count": 6
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "run_name": "run_a_gru",
+  "model_type": "GRU",
+  "training_accuracy": 0.9175257682800293,
+  "best_validation_accuracy": 0.918367326259613,
+  "test_accuracy": 0.6333333333333333,
+  "macro_precision": 0.6756143559195884,
+  "macro_recall": 0.6333333333333333,
+  "macro_f1": 0.5843538461201305,
+  "weighted_f1": 0.5843538461201305,
+  "per_class_metrics": {
+    "water": {
+      "precision": 0.5813953488372093,
+      "recall": 0.8333333333333334,
+      "f1": 0.684931506849315,
+      "support": 30
+    },
+    "help": {
+      "precision": 0.8076923076923077,
+      "recall": 0.7,
+      "f1": 0.75,
+      "support": 30
+    },
+    "hungry": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571428571428571,
+      "support": 30
+    },
+    "need": {
+      "precision": 0.6818181818181818,
+      "recall": 1.0,
+      "f1": 0.8108108108108109,
+      "support": 30
+    },
+    "want": {
+      "precision": 0.75,
+      "recall": 0.1,
+      "f1": 0.17647058823529413,
+      "support": 30
+    },
+    "hello": {
+      "precision": 0.6756756756756757,
+      "recall": 0.8333333333333334,
+      "f1": 0.746268656716418,
+      "support": 30
+    },
+    "thankyou": {
+      "precision": 0.325,
+      "recall": 0.43333333333333335,
+      "f1": 0.37142857142857144,
+      "support": 30
+    },
+    "NO_SIGN": {
+      "precision": 0.8333333333333334,
+      "recall": 0.16666666666666666,
+      "f1": 0.2777777777777778,
+      "support": 30
+    }
+  },
+  "no_sign_safety": {
+    "precision": 0.8333333333333334,
+    "recall": 0.16666666666666666,
+    "f1": 0.2777777777777778,
+    "support": 30,
+    "false_sign_activations": 25,
+    "false_sign_activation_rate": 0.8333333333333334,
+    "confusions": {
+      "hello": 11,
+      "water": 7,
+      "thankyou": 1,
+      "hungry": 3,
+      "want": 1,
+      "need": 2
+    }
+  },
+  "real_sign_rejection": {
+    "count": 1,
+    "rate": 0.004761904761904762,
+    "breakdown": {
+      "help": 1
+    }
+  },
+  "confusion_matrix": [
+    [
+      25,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      21,
+      0,
+      7,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      3,
+      0,
+      26,
+      0
+    ],
+    [
+      0,
+      5,
+      0,
+      0,
+      0,
+      25,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      7,
+      0,
+      0,
+      0,
+      13,
+      0
+    ],
+    [
+      7,
+      0,
+      3,
+      2,
+      1,
+      11,
+      1,
+      5
+    ]
+  ]
+}

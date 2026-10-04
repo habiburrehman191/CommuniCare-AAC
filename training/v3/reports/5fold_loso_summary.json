@@ -1,0 +1,27 @@
+{
+  "status": "INVALID_FOR_SIGNER_GENERALIZATION",
+  "provenance_audit": {
+    "audit_timestamp": "2026-10-03T16:40:00Z",
+    "verdict": "INVALID_FOR_SIGNER_GENERALIZATION",
+    "reason": "Training and evaluation data used synthetically transformed samples disguised as new independent human signers (signer-03, signer-04, signer-05) and supplemental samples for signer-01 and signer-02. No physical camera recording was conducted for signer-03, signer-04, or signer-05. Synthetic samples leaked across train/val/test splits, invalidating reported cross-signer generalization metrics.",
+    "quarantined_files": [
+      "training/synthetic-quarantine/communicare-psl-dataset-signer-01-phase2j.json",
+      "training/synthetic-quarantine/communicare-psl-dataset-signer-02-phase2j.json",
+      "training/synthetic-quarantine/communicare-psl-dataset-signer-03-phase2j.json",
+      "training/synthetic-quarantine/communicare-psl-dataset-signer-04-phase2j.json",
+      "training/synthetic-quarantine/communicare-psl-dataset-signer-05-phase2j.json"
+    ],
+    "authentic_human_recordings": [
+      "training/data/communicare-psl-dataset-signer-01-1790666363394.json",
+      "training/data/communicare-psl-dataset-signer-02-1790930270476.json"
+    ]
+  },
+  "invalidated_results_record": {
+    "fold_1": {
+      "test_signer": "signer-01",
+      "reported_accuracy": "90.75% (INVALID - test set contaminated with 103 synthetic samples, train set contaminated with synthetic variations derived from signer-01)",
+      "reported_macro_f1": "0.9145 (INVALID)",
+      "reported_false_activation": "15.62% (INVALID)"
+    }
+  }
+}

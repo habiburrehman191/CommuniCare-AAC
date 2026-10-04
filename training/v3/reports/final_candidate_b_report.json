@@ -1,0 +1,484 @@
+{
+  "candidate": "B",
+  "metadata": {
+    "modelName": "communicare-aac-sign-v3-candidate",
+    "phase": "PHASE_2L_FINAL",
+    "candidateKey": "B",
+    "architecture": "Conv1D(48) + GRU(64)",
+    "parameterCount": 60568,
+    "inputShape": [
+      1,
+      24,
+      252
+    ],
+    "outputShape": [
+      1,
+      8
+    ],
+    "opset": 17,
+    "fileSizeBytes": 259238,
+    "fileSizeKb": 253.16,
+    "dataset": {
+      "authenticSigners": [
+        "signer-01",
+        "signer-02",
+        "signer-03",
+        "signer-04"
+      ],
+      "totalUniqueSamples": 808,
+      "trainSequences": 686,
+      "valSequences": 122,
+      "syntheticSignersUsed": false,
+      "syntheticQuarantineUsed": false
+    },
+    "training": {
+      "bestEpoch": 4,
+      "trainingDurationSec": 54.0,
+      "trainLoss": 0.1046,
+      "valLoss": 0.147,
+      "hardNegativeMining": {
+        "minedWindows": 75,
+        "preFalseAct": 0.1875,
+        "postFalseAct": 0.125
+      }
+    },
+    "parity": {
+      "status": "PASSED",
+      "samplesEvaluated": 808,
+      "top1Agreement": 1.0,
+      "maxProbabilityDiff": 3.5762786865234375e-07,
+      "meanProbabilityDiff": 8.143275387340054e-09
+    },
+    "validationMetrics": {
+      "accuracy": 0.9754098360655737,
+      "macroF1": 0.9757803809788654,
+      "noSignFalseActivation": 0.125,
+      "realSignRejection": 0.009433962264150943,
+      "perClass": {
+        "water": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 15
+        },
+        "help": {
+          "precision": 0.9375,
+          "recall": 0.9375,
+          "f1": 0.9375,
+          "support": 16
+        },
+        "hungry": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 15
+        },
+        "need": {
+          "precision": 0.9333333333333333,
+          "recall": 1.0,
+          "f1": 0.9655172413793104,
+          "support": 14
+        },
+        "want": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 15
+        },
+        "hello": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 15
+        },
+        "thankyou": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 16
+        },
+        "NO_SIGN": {
+          "precision": 0.9333333333333333,
+          "recall": 0.875,
+          "f1": 0.9032258064516129,
+          "support": 16
+        }
+      }
+    },
+    "benchmark": {
+      "meanInferenceMs": 4.37,
+      "p95InferenceMs": 5.52,
+      "estimatedFirstCandidateSec": 0.9
+    }
+  },
+  "calibration": {
+    "candidate": "B",
+    "modelName": "Conv1D(48) + GRU(64)",
+    "calibratedAt": "2026-10-03T20:57:00Z",
+    "globalConfidenceThreshold": 0.6,
+    "marginThreshold": 0.0,
+    "classSpecificThresholds": {
+      "water": 0.6,
+      "help": 0.6,
+      "hungry": 0.6,
+      "need": 0.6,
+      "want": 0.6,
+      "hello": 0.6,
+      "thankyou": 0.5499999999999999,
+      "NO_SIGN": 0.6
+    },
+    "temporalStability": {
+      "requiredConsecutiveWindows": 2,
+      "inferenceStrideFrames": 3,
+      "inferenceStrideMs": 100,
+      "cooldownFrames": 15,
+      "cooldownMs": 500
+    },
+    "rejectionRules": {
+      "noSignRule": "If top1 class is NO_SIGN, never surface candidate.",
+      "confidenceRule": "top1 confidence must be >= threshold (0.60)",
+      "marginRule": "top1 - top2 probability difference must be >= 0.00",
+      "stabilityRule": "Must observe 2 consecutive matching accepted windows before candidate is surfaced."
+    },
+    "validationPerformance": {
+      "streamingPrecision": 0.9375,
+      "streamingRecall": 0.9905660377358491,
+      "noSignFalseActivation": 0.375,
+      "realSignRejection": 0.0,
+      "meanLatencySec": 0.9276785714285716
+    },
+    "tuningSplit": "Grouped sequence-level validation (122 sequences, 15%) on genuine signers (signer-01..signer-04)",
+    "rationale": "Conservative calibration prioritizing reduction of NO_SIGN false activation below LOSO baseline while preserving weakest sign (thankyou) and streaming responsiveness."
+  },
+  "preMiningMetrics": {
+    "accuracy": 0.9672131147540983,
+    "macro_f1": 0.9671782304412311,
+    "macro_precision": 0.9671130952380953,
+    "macro_recall": 0.96875,
+    "weighted_f1": 0.9663937465429104,
+    "no_sign_recall": 0.8125,
+    "no_sign_false_activation_rate": 0.1875,
+    "real_sign_rejection_rate": 0.009433962264150943,
+    "weakest_sign": {
+      "label": "help",
+      "recall": 0.9375
+    },
+    "strongest_sign": {
+      "label": "water",
+      "recall": 1.0
+    },
+    "most_confused_pair": {
+      "true": "help",
+      "pred": "NO_SIGN",
+      "count": 1
+    },
+    "per_class": {
+      "water": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 15
+      },
+      "help": {
+        "precision": 0.9375,
+        "recall": 0.9375,
+        "f1": 0.9375,
+        "support": 16
+      },
+      "hungry": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 15
+      },
+      "need": {
+        "precision": 0.9333333333333333,
+        "recall": 1.0,
+        "f1": 0.9655172413793104,
+        "support": 14
+      },
+      "want": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1": 0.967741935483871,
+        "support": 15
+      },
+      "hello": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 15
+      },
+      "thankyou": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 16
+      },
+      "NO_SIGN": {
+        "precision": 0.9285714285714286,
+        "recall": 0.8125,
+        "f1": 0.8666666666666667,
+        "support": 16
+      }
+    },
+    "confusion_matrix": [
+      [
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        13
+      ]
+    ]
+  },
+  "postMiningMetrics": {
+    "accuracy": 0.9754098360655737,
+    "macro_f1": 0.9757803809788654,
+    "macro_precision": 0.9755208333333334,
+    "macro_recall": 0.9765625,
+    "weighted_f1": 0.9751545432994767,
+    "no_sign_recall": 0.875,
+    "no_sign_false_activation_rate": 0.125,
+    "real_sign_rejection_rate": 0.009433962264150943,
+    "weakest_sign": {
+      "label": "help",
+      "recall": 0.9375
+    },
+    "strongest_sign": {
+      "label": "water",
+      "recall": 1.0
+    },
+    "most_confused_pair": {
+      "true": "help",
+      "pred": "NO_SIGN",
+      "count": 1
+    },
+    "per_class": {
+      "water": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 15
+      },
+      "help": {
+        "precision": 0.9375,
+        "recall": 0.9375,
+        "f1": 0.9375,
+        "support": 16
+      },
+      "hungry": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 15
+      },
+      "need": {
+        "precision": 0.9333333333333333,
+        "recall": 1.0,
+        "f1": 0.9655172413793104,
+        "support": 14
+      },
+      "want": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 15
+      },
+      "hello": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 15
+      },
+      "thankyou": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 16
+      },
+      "NO_SIGN": {
+        "precision": 0.9333333333333333,
+        "recall": 0.875,
+        "f1": 0.9032258064516129,
+        "support": 16
+      }
+    },
+    "confusion_matrix": [
+      [
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        14
+      ]
+    ]
+  },
+  "streamingMetrics": {
+    "candidate_precision": 0.9375,
+    "candidate_recall": 0.9905660377358491,
+    "no_sign_false_activation": 0.375,
+    "real_sign_rejection": 0.0,
+    "mean_latency_sec": 0.9276785714285716,
+    "p95_latency_sec": 1.0449999999999988,
+    "per_class_recall": {
+      "water": 1.0,
+      "help": 1.0,
+      "hungry": 1.0,
+      "need": 1.0,
+      "want": 1.0,
+      "hello": 1.0,
+      "thankyou": 0.9375
+    },
+    "weakest_class": "thankyou",
+    "weakest_recall": 0.9375,
+    "surfaced_count": 112,
+    "correct_count": 105
+  }
+}

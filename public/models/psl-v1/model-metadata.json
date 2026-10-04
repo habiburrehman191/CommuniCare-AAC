@@ -1,0 +1,17 @@
+{
+  "modelVersion": "1.0.0",
+  "datasetVersion": "V1",
+  "classCount": 63,
+  "modelSource": "MohibUllahKhanSherwani/SignSpeak_FYP (action_model_augmented_new.h5)",
+  "license": "Apache-2.0",
+  "inputShape": [1, 60, 126],
+  "outputShape": [1, 63],
+  "inputName": "input",
+  "outputName": "Identity:0",
+  "conversion": {
+    "framework": "tf2onnx",
+    "opset": 14,
+    "maxAbsDiffVsH5": 1.192093e-7
+  },
+  "spotCheckNote": "Independent spot-check on 30 real V1 dataset sequences across 6 classes (water, thankyou, hello, bed, shower, donttouch) achieved 30/30 match against H5 ground truth. This is a local verification spot-check and does not represent overall real-world or full-vocabulary dataset accuracy."
+}

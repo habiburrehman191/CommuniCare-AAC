@@ -1,0 +1,36 @@
+{
+  "version": "wrist_normalized_posvel_v3",
+  "description": "CommuniCare AAC 24-frame Position + Velocity Feature Representation",
+  "sequenceLength": 24,
+  "featuresPerFrame": 252,
+  "positionFeatures": 126,
+  "velocityFeatures": 126,
+  "handSlots": {
+    "left": {
+      "positionIndexRange": [
+        0,
+        62
+      ],
+      "velocityIndexRange": [
+        126,
+        188
+      ],
+      "landmarkCount": 21,
+      "coordsPerLandmark": 3
+    },
+    "right": {
+      "positionIndexRange": [
+        63,
+        125
+      ],
+      "velocityIndexRange": [
+        189,
+        251
+      ],
+      "landmarkCount": 21,
+      "coordsPerLandmark": 3
+    }
+  },
+  "velocitySemantics": "v[t] = pos[t] - pos[t-1]. v[0] = zeros(126). If a hand slot is absent in frame t OR frame t-1, velocity for that entire hand slot is strictly zero.",
+  "normalizationVersion": "wrist_normalized_v1 for position coordinates (wrist at origin, hand scale normalized)"
+}

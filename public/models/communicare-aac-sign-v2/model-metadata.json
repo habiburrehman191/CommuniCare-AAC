@@ -1,0 +1,42 @@
+{
+  "modelName": "CommuniCare AAC Sign V2",
+  "version": "2.0.0",
+  "architecture": "GRU",
+  "framework": "Keras 3 / TensorFlow / tf2onnx",
+  "opset": 17,
+  "classes": [
+    "water",
+    "help",
+    "hungry",
+    "need",
+    "want",
+    "hello",
+    "thankyou",
+    "NO_SIGN"
+  ],
+  "numClasses": 8,
+  "inputShape": [
+    1,
+    24,
+    252
+  ],
+  "inputName": "input_frames",
+  "outputName": "probabilities",
+  "sequenceLength": 24,
+  "featuresPerFrame": 252,
+  "featureSchema": "wrist_normalized_posvel_v2",
+  "researchMetricsLOSO": {
+    "meanAccuracy": 0.7046,
+    "meanMacroF1": 0.6879,
+    "v1BaselineAccuracy": 0.5553,
+    "v1BaselineMacroF1": 0.5228,
+    "accuracyImprovement": 0.1493,
+    "f1Improvement": 0.1651,
+    "historyDurationSeconds": 0.8,
+    "v1HistoryDurationSeconds": 2.0,
+    "latencyImprovementRatio": 2.5
+  },
+  "deploymentStatus": "research_candidate_ready_for_review",
+  "activeInProduction": false,
+  "dateCreated": "2026-10-03 14:14:33"
+}

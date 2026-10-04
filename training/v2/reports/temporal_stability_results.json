@@ -1,0 +1,56 @@
+{
+  "1_window_raw": {
+    "candidate_precision": 0.7559808612440191,
+    "candidate_recall": 0.7185085354896675,
+    "false_sign_activation_rate": 0.8370967741935484,
+    "avg_additional_decision_delay_seconds": 0.027775119617224883,
+    "run_a": {
+      "candidate_precision": 0.8277511961722488,
+      "candidate_recall": 0.8238095238095238,
+      "false_sign_activation_rate": 0.9,
+      "avg_additional_decision_delay_seconds": 0.0023923444976076554
+    },
+    "run_b": {
+      "candidate_precision": 0.6842105263157895,
+      "candidate_recall": 0.6132075471698113,
+      "false_sign_activation_rate": 0.7741935483870968,
+      "avg_additional_decision_delay_seconds": 0.05315789473684211
+    }
+  },
+  "2_matching_windows": {
+    "candidate_precision": 0.7757961124896608,
+    "candidate_recall": 0.7279649595687332,
+    "false_sign_activation_rate": 0.7881720430107527,
+    "avg_additional_decision_delay_seconds": 0.1345585194375517,
+    "run_a": {
+      "candidate_precision": 0.8365384615384616,
+      "candidate_recall": 0.8285714285714286,
+      "false_sign_activation_rate": 0.8666666666666667,
+      "avg_additional_decision_delay_seconds": 0.1201923076923077
+    },
+    "run_b": {
+      "candidate_precision": 0.7150537634408602,
+      "candidate_recall": 0.6273584905660378,
+      "false_sign_activation_rate": 0.7096774193548387,
+      "avg_additional_decision_delay_seconds": 0.14892473118279573
+    }
+  },
+  "3_matching_windows": {
+    "candidate_precision": 0.7753709591944886,
+    "candidate_recall": 0.7185085354896675,
+    "false_sign_activation_rate": 0.7720430107526881,
+    "avg_additional_decision_delay_seconds": 0.25311473237943827,
+    "run_a": {
+      "candidate_precision": 0.8480392156862745,
+      "candidate_recall": 0.8238095238095238,
+      "false_sign_activation_rate": 0.8666666666666667,
+      "avg_additional_decision_delay_seconds": 0.2446078431372549
+    },
+    "run_b": {
+      "candidate_precision": 0.7027027027027027,
+      "candidate_recall": 0.6132075471698113,
+      "false_sign_activation_rate": 0.6774193548387096,
+      "avg_additional_decision_delay_seconds": 0.26162162162162167
+    }
+  }
+}

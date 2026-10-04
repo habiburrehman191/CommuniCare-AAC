@@ -1,0 +1,18 @@
+node_modules/
+dist/
+server-dist/
+.env
+.env.*
+!.env.example
+!.env.server.example
+*.tsbuildinfo
+
+*.log
+.firebase/
+
+*.log
+.firebase/
+
+# Raw sign-recognition datasets - local only
+training/data/*.json
+training/synthetic-quarantine/

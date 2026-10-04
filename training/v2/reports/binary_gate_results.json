@@ -1,0 +1,19 @@
+{
+  "binary_precision": 0.9428945316850428,
+  "binary_recall": 0.8535938903863431,
+  "binary_f1": 0.8910752368199177,
+  "false_sign_activation_rate": 0.38010752688172045,
+  "added_inference_latency_ms": 171.3,
+  "run_a": {
+    "precision": 0.9223744292237442,
+    "recall": 0.9619047619047619,
+    "f1": 0.9417249417249417,
+    "false_sign_activation_rate": 0.5666666666666667
+  },
+  "run_b": {
+    "precision": 0.9634146341463414,
+    "recall": 0.7452830188679245,
+    "f1": 0.8404255319148937,
+    "false_sign_activation_rate": 0.1935483870967742
+  }
+}

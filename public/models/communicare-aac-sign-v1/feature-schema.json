@@ -1,0 +1,9 @@
+{
+  "schemaName": "wrist_normalized_v1",
+  "sequenceLength": 60,
+  "featuresPerFrame": 126,
+  "leftHandSlot": "0-62",
+  "rightHandSlot": "63-125",
+  "missingHand": "zeros",
+  "inputDtype": "float32"
+}

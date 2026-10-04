@@ -1,0 +1,434 @@
+{
+  "stream_24frame_compactmotion_gru": {
+    "uncalibrated_baseline": {
+      "accuracy": 0.6011831275720164,
+      "macro_f1": 0.5923065704540068,
+      "false_sign_activation_rate": 0.6575268817204301,
+      "real_sign_rejection_rate": 0.09200359389038634,
+      "mean_real_sign_recall": 0.638095238095238,
+      "min_real_sign_recall": 0.3833333333333333
+    },
+    "global_confidence_threshold": {
+      "best_threshold_a": 0.4,
+      "best_threshold_b": 0.9,
+      "accuracy": 0.5662037037037037,
+      "macro_f1": 0.5570435571423507,
+      "false_sign_activation_rate": 0.4478494623655914,
+      "real_sign_rejection_rate": 0.23823000898472596,
+      "mean_real_sign_recall": 0.5675595238095238,
+      "min_real_sign_recall": 0.3333333333333333
+    },
+    "top1_top2_margin": {
+      "best_margin_a": 0.1,
+      "best_margin_b": 0.1,
+      "accuracy": 0.6011831275720164,
+      "macro_f1": 0.5942536564803587,
+      "false_sign_activation_rate": 0.6413978494623656,
+      "real_sign_rejection_rate": 0.11091644204851753,
+      "mean_real_sign_recall": 0.6357142857142857,
+      "min_real_sign_recall": 0.3833333333333333
+    },
+    "class_specific_thresholds": {
+      "class_thresholds_a": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.4,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "class_thresholds_b": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.8,
+        "need": 0.4,
+        "want": 0.4,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "accuracy": 0.6011831275720164,
+      "macro_f1": 0.593764574828527,
+      "false_sign_activation_rate": 0.6575268817204301,
+      "real_sign_rejection_rate": 0.1085130278526505,
+      "mean_real_sign_recall": 0.638095238095238,
+      "min_real_sign_recall": 0.3833333333333333
+    },
+    "combined_threshold_margin": {
+      "best_combined_a": {
+        "threshold": 0.5,
+        "margin": 0.1
+      },
+      "best_combined_b": {
+        "threshold": 0.8,
+        "margin": 0.1
+      },
+      "accuracy": 0.5806069958847737,
+      "macro_f1": 0.5723955786309894,
+      "false_sign_activation_rate": 0.4478494623655914,
+      "real_sign_rejection_rate": 0.2147349505840072,
+      "mean_real_sign_recall": 0.5842261904761905,
+      "min_real_sign_recall": 0.35
+    }
+  },
+  "stream_24frame_posvel_conv1d_gru": {
+    "uncalibrated_baseline": {
+      "accuracy": 0.6589763374485597,
+      "macro_f1": 0.6393224504082011,
+      "false_sign_activation_rate": 0.5763440860215053,
+      "real_sign_rejection_rate": 0.07571877807726865,
+      "mean_real_sign_recall": 0.6928571428571428,
+      "min_real_sign_recall": 0.18333333333333335
+    },
+    "global_confidence_threshold": {
+      "best_threshold_a": 0.4,
+      "best_threshold_b": 0.9,
+      "accuracy": 0.6445730452674897,
+      "macro_f1": 0.6277247055468242,
+      "false_sign_activation_rate": 0.4634408602150537,
+      "real_sign_rejection_rate": 0.1323225516621743,
+      "mean_real_sign_recall": 0.659970238095238,
+      "min_real_sign_recall": 0.15000000000000002
+    },
+    "top1_top2_margin": {
+      "best_margin_a": 0.1,
+      "best_margin_b": 0.1,
+      "accuracy": 0.6527263374485597,
+      "macro_f1": 0.6330435102991625,
+      "false_sign_activation_rate": 0.5602150537634408,
+      "real_sign_rejection_rate": 0.08995956873315364,
+      "mean_real_sign_recall": 0.6833333333333333,
+      "min_real_sign_recall": 0.16666666666666666
+    },
+    "class_specific_thresholds": {
+      "class_thresholds_a": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.4,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "class_thresholds_b": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.4,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "accuracy": 0.6589763374485597,
+      "macro_f1": 0.6393224504082011,
+      "false_sign_activation_rate": 0.5763440860215053,
+      "real_sign_rejection_rate": 0.07571877807726865,
+      "mean_real_sign_recall": 0.6928571428571428,
+      "min_real_sign_recall": 0.18333333333333335
+    },
+    "combined_threshold_margin": {
+      "best_combined_a": {
+        "threshold": 0.5,
+        "margin": 0.1
+      },
+      "best_combined_b": {
+        "threshold": 0.5,
+        "margin": 0.1
+      },
+      "accuracy": 0.6527263374485597,
+      "macro_f1": 0.6330435102991625,
+      "false_sign_activation_rate": 0.5602150537634408,
+      "real_sign_rejection_rate": 0.08995956873315364,
+      "mean_real_sign_recall": 0.6833333333333333,
+      "min_real_sign_recall": 0.16666666666666666
+    }
+  },
+  "stream_24frame_posvel_gru": {
+    "uncalibrated_baseline": {
+      "accuracy": 0.6425668724279835,
+      "macro_f1": 0.6285739174012045,
+      "false_sign_activation_rate": 0.5935483870967742,
+      "real_sign_rejection_rate": 0.13214285714285715,
+      "mean_real_sign_recall": 0.6755952380952381,
+      "min_real_sign_recall": 0.25
+    },
+    "global_confidence_threshold": {
+      "best_threshold_a": 0.7,
+      "best_threshold_b": 0.7,
+      "accuracy": 0.6261574074074074,
+      "macro_f1": 0.6202597517850199,
+      "false_sign_activation_rate": 0.44623655913978494,
+      "real_sign_rejection_rate": 0.2480008984725966,
+      "mean_real_sign_recall": 0.6354166666666666,
+      "min_real_sign_recall": 0.18333333333333335
+    },
+    "top1_top2_margin": {
+      "best_margin_a": 0.3,
+      "best_margin_b": 0.5,
+      "accuracy": 0.6178755144032921,
+      "macro_f1": 0.6094190939428166,
+      "false_sign_activation_rate": 0.47956989247311826,
+      "real_sign_rejection_rate": 0.25029200359389037,
+      "mean_real_sign_recall": 0.6306547619047619,
+      "min_real_sign_recall": 0.18333333333333335
+    },
+    "class_specific_thresholds": {
+      "class_thresholds_a": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.7,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "class_thresholds_b": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.4,
+        "hello": 0.7,
+        "thankyou": 0.4
+      },
+      "accuracy": 0.6363683127572016,
+      "macro_f1": 0.6213517985523149,
+      "false_sign_activation_rate": 0.5935483870967742,
+      "real_sign_rejection_rate": 0.139240790655885,
+      "mean_real_sign_recall": 0.6684523809523809,
+      "min_real_sign_recall": 0.23333333333333334
+    },
+    "combined_threshold_margin": {
+      "best_combined_a": {
+        "threshold": 0.5,
+        "margin": 0.3
+      },
+      "best_combined_b": {
+        "threshold": 0.7,
+        "margin": 0.1
+      },
+      "accuracy": 0.6219907407407407,
+      "macro_f1": 0.6136080114346725,
+      "false_sign_activation_rate": 0.47956989247311826,
+      "real_sign_rejection_rate": 0.24085804132973945,
+      "mean_real_sign_recall": 0.6354166666666666,
+      "min_real_sign_recall": 0.18333333333333335
+    }
+  },
+  "stream_30frame_compactmotion_gru": {
+    "uncalibrated_baseline": {
+      "accuracy": 0.5931069958847737,
+      "macro_f1": 0.5861097410515885,
+      "false_sign_activation_rate": 0.5424731182795699,
+      "real_sign_rejection_rate": 0.1132973944294699,
+      "mean_real_sign_recall": 0.6119047619047618,
+      "min_real_sign_recall": 0.33333333333333337
+    },
+    "global_confidence_threshold": {
+      "best_threshold_a": 0.6,
+      "best_threshold_b": 0.85,
+      "accuracy": 0.5622170781893004,
+      "macro_f1": 0.5428844976609997,
+      "false_sign_activation_rate": 0.282258064516129,
+      "real_sign_rejection_rate": 0.3070080862533693,
+      "mean_real_sign_recall": 0.5388392857142857,
+      "min_real_sign_recall": 0.18333333333333332
+    },
+    "top1_top2_margin": {
+      "best_margin_a": 0.2,
+      "best_margin_b": 0.1,
+      "accuracy": 0.588966049382716,
+      "macro_f1": 0.5838990477843469,
+      "false_sign_activation_rate": 0.47634408602150535,
+      "real_sign_rejection_rate": 0.15125786163522012,
+      "mean_real_sign_recall": 0.5976190476190476,
+      "min_real_sign_recall": 0.30000000000000004
+    },
+    "class_specific_thresholds": {
+      "class_thresholds_a": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.6,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "class_thresholds_b": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.4,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "accuracy": 0.5910236625514403,
+      "macro_f1": 0.5834089526800684,
+      "false_sign_activation_rate": 0.5258064516129032,
+      "real_sign_rejection_rate": 0.11805929919137467,
+      "mean_real_sign_recall": 0.6071428571428571,
+      "min_real_sign_recall": 0.3
+    },
+    "combined_threshold_margin": {
+      "best_combined_a": {
+        "threshold": 0.5,
+        "margin": 0.2
+      },
+      "best_combined_b": {
+        "threshold": 0.5,
+        "margin": 0.1
+      },
+      "accuracy": 0.5930812757201647,
+      "macro_f1": 0.5851749031672975,
+      "false_sign_activation_rate": 0.42795698924731185,
+      "real_sign_rejection_rate": 0.15361635220125786,
+      "mean_real_sign_recall": 0.5952380952380952,
+      "min_real_sign_recall": 0.30000000000000004
+    }
+  },
+  "stream_30frame_posvel_conv1d_gru": {
+    "uncalibrated_baseline": {
+      "accuracy": 0.636548353909465,
+      "macro_f1": 0.635439396625547,
+      "false_sign_activation_rate": 0.5086021505376344,
+      "real_sign_rejection_rate": 0.1157906558849955,
+      "mean_real_sign_recall": 0.657142857142857,
+      "min_real_sign_recall": 0.4
+    },
+    "global_confidence_threshold": {
+      "best_threshold_a": 0.4,
+      "best_threshold_b": 0.4,
+      "accuracy": 0.6386059670781893,
+      "macro_f1": 0.6380096774049067,
+      "false_sign_activation_rate": 0.49247311827956985,
+      "real_sign_rejection_rate": 0.11814914645103325,
+      "mean_real_sign_recall": 0.657142857142857,
+      "min_real_sign_recall": 0.4
+    },
+    "top1_top2_margin": {
+      "best_margin_a": 0.1,
+      "best_margin_b": 0.1,
+      "accuracy": 0.6344650205761317,
+      "macro_f1": 0.6331176028261409,
+      "false_sign_activation_rate": 0.49247311827956985,
+      "real_sign_rejection_rate": 0.12996406109613656,
+      "mean_real_sign_recall": 0.6523809523809523,
+      "min_real_sign_recall": 0.3833333333333333
+    },
+    "class_specific_thresholds": {
+      "class_thresholds_a": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.4,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "class_thresholds_b": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.4,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "accuracy": 0.6386059670781893,
+      "macro_f1": 0.6380096774049067,
+      "false_sign_activation_rate": 0.49247311827956985,
+      "real_sign_rejection_rate": 0.11814914645103325,
+      "mean_real_sign_recall": 0.657142857142857,
+      "min_real_sign_recall": 0.4
+    },
+    "combined_threshold_margin": {
+      "best_combined_a": {
+        "threshold": 0.5,
+        "margin": 0.1
+      },
+      "best_combined_b": {
+        "threshold": 0.5,
+        "margin": 0.1
+      },
+      "accuracy": 0.6385802469135802,
+      "macro_f1": 0.6373992204724447,
+      "false_sign_activation_rate": 0.46021505376344085,
+      "real_sign_rejection_rate": 0.13706199460916443,
+      "mean_real_sign_recall": 0.6523809523809523,
+      "min_real_sign_recall": 0.3833333333333333
+    }
+  },
+  "stream_30frame_posvel_gru": {
+    "uncalibrated_baseline": {
+      "accuracy": 0.636496913580247,
+      "macro_f1": 0.6244916392692701,
+      "false_sign_activation_rate": 0.6413978494623656,
+      "real_sign_rejection_rate": 0.1085130278526505,
+      "mean_real_sign_recall": 0.6757440476190476,
+      "min_real_sign_recall": 0.25
+    },
+    "global_confidence_threshold": {
+      "best_threshold_a": 0.6,
+      "best_threshold_b": 0.85,
+      "accuracy": 0.6034979423868313,
+      "macro_f1": 0.5951882472868059,
+      "false_sign_activation_rate": 0.4473118279569892,
+      "real_sign_rejection_rate": 0.2595911949685535,
+      "mean_real_sign_recall": 0.6099702380952381,
+      "min_real_sign_recall": 0.21666666666666667
+    },
+    "top1_top2_margin": {
+      "best_margin_a": 0.4,
+      "best_margin_b": 0.1,
+      "accuracy": 0.6281635802469135,
+      "macro_f1": 0.6202425449900396,
+      "false_sign_activation_rate": 0.5591397849462365,
+      "real_sign_rejection_rate": 0.14413746630727764,
+      "mean_real_sign_recall": 0.6543154761904761,
+      "min_real_sign_recall": 0.23333333333333334
+    },
+    "class_specific_thresholds": {
+      "class_thresholds_a": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.6,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "class_thresholds_b": {
+        "water": 0.4,
+        "help": 0.4,
+        "hungry": 0.4,
+        "need": 0.4,
+        "want": 0.4,
+        "hello": 0.4,
+        "thankyou": 0.4
+      },
+      "accuracy": 0.6344135802469135,
+      "macro_f1": 0.6211451753964904,
+      "false_sign_activation_rate": 0.6413978494623656,
+      "real_sign_rejection_rate": 0.11089398023360288,
+      "mean_real_sign_recall": 0.6733630952380952,
+      "min_real_sign_recall": 0.23333333333333334
+    },
+    "combined_threshold_margin": {
+      "best_combined_a": {
+        "threshold": 0.6,
+        "margin": 0.1
+      },
+      "best_combined_b": {
+        "threshold": 0.5,
+        "margin": 0.1
+      },
+      "accuracy": 0.6302469135802469,
+      "macro_f1": 0.6200456105423418,
+      "false_sign_activation_rate": 0.5924731182795698,
+      "real_sign_rejection_rate": 0.1440251572327044,
+      "mean_real_sign_recall": 0.6614583333333333,
+      "min_real_sign_recall": 0.23333333333333334
+    }
+  }
+}

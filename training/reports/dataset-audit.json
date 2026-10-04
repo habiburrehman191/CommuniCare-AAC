@@ -1,0 +1,127 @@
+{
+  "status": "PASSED",
+  "total_files": 4,
+  "total_valid_sequences": 969,
+  "combined_signer_counts": {
+    "signer-01": 243,
+    "signer-02": 240,
+    "signer-03": 322,
+    "signer-04": 164
+  },
+  "combined_class_counts": {
+    "water": 122,
+    "help": 123,
+    "need": 120,
+    "hello": 120,
+    "thankyou": 120,
+    "NO_SIGN": 121,
+    "want": 121,
+    "hungry": 122
+  },
+  "cross_file_duplicates_count": 0,
+  "cross_file_duplicates": [],
+  "issues": [],
+  "file_audits": [
+    {
+      "filename": "communicare-psl-dataset-signer-01-1790666363394.json",
+      "total_samples": 243,
+      "signer_counts": {
+        "signer-01": 243
+      },
+      "class_counts": {
+        "water": 30,
+        "help": 32,
+        "need": 30,
+        "hello": 30,
+        "thankyou": 30,
+        "NO_SIGN": 31,
+        "want": 30,
+        "hungry": 30
+      },
+      "all_zero_sequences_count": 0,
+      "partial_zero_sequences_count": 71,
+      "duplicates_within_file_count": 0,
+      "malformed_samples_count": 0,
+      "normalized_frames_equal_frames": true,
+      "normalized_frames_present_count": 243,
+      "raw_frames_present_count": 243,
+      "issues": []
+    },
+    {
+      "filename": "communicare-psl-dataset-signer-02-1790930270476.json",
+      "total_samples": 240,
+      "signer_counts": {
+        "signer-02": 240
+      },
+      "class_counts": {
+        "water": 30,
+        "help": 30,
+        "need": 30,
+        "hello": 30,
+        "thankyou": 30,
+        "hungry": 30,
+        "want": 30,
+        "NO_SIGN": 30
+      },
+      "all_zero_sequences_count": 0,
+      "partial_zero_sequences_count": 43,
+      "duplicates_within_file_count": 0,
+      "malformed_samples_count": 0,
+      "normalized_frames_equal_frames": true,
+      "normalized_frames_present_count": 240,
+      "raw_frames_present_count": 240,
+      "issues": []
+    },
+    {
+      "filename": "communicare-psl-dataset-signer-03-1791041167125.json",
+      "total_samples": 161,
+      "signer_counts": {
+        "signer-03": 161
+      },
+      "class_counts": {
+        "water": 21,
+        "help": 20,
+        "hungry": 20,
+        "need": 20,
+        "want": 20,
+        "hello": 20,
+        "thankyou": 20,
+        "NO_SIGN": 20
+      },
+      "all_zero_sequences_count": 0,
+      "partial_zero_sequences_count": 39,
+      "duplicates_within_file_count": 0,
+      "malformed_samples_count": 0,
+      "normalized_frames_equal_frames": true,
+      "normalized_frames_present_count": 161,
+      "raw_frames_present_count": 161,
+      "issues": []
+    },
+    {
+      "filename": "communicare-psl-dataset-signer-04-1791045198241.json",
+      "total_samples": 325,
+      "signer_counts": {
+        "signer-03": 161,
+        "signer-04": 164
+      },
+      "class_counts": {
+        "water": 41,
+        "help": 41,
+        "hungry": 42,
+        "need": 40,
+        "want": 41,
+        "hello": 40,
+        "thankyou": 40,
+        "NO_SIGN": 40
+      },
+      "all_zero_sequences_count": 0,
+      "partial_zero_sequences_count": 87,
+      "duplicates_within_file_count": 0,
+      "malformed_samples_count": 0,
+      "normalized_frames_equal_frames": true,
+      "normalized_frames_present_count": 325,
+      "raw_frames_present_count": 325,
+      "issues": []
+    }
+  ]
+}

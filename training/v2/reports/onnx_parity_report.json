@@ -1,0 +1,9 @@
+{
+  "totalSamplesEvaluated": 483,
+  "top1AgreementCount": 483,
+  "top1AgreementPercentage": 100.0,
+  "maximumProbabilityDifference": 5.960464477539062e-07,
+  "meanProbabilityDifference": 7.818225747156893e-09,
+  "ortInferenceLatencyMs": 164.82259792962168,
+  "parityVerified": true
+}

@@ -1,0 +1,10 @@
+{
+  "sequenceLength": 60,
+  "featuresPerFrame": 126,
+  "landmarksPerHand": 21,
+  "coordinatesPerLandmark": 3,
+  "leftHandOffset": 0,
+  "rightHandOffset": 63,
+  "missingHandEncoding": "zeros",
+  "normalization": "raw-mediapipe-normalized-coordinates"
+}

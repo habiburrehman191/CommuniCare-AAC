@@ -1,0 +1,30 @@
+{
+  "GRU": {
+    "run_a_test_acc": 0.6333333333333333,
+    "run_a_macro_f1": 0.5843538461201305,
+    "run_a_no_sign_recall": 0.16666666666666666,
+    "run_a_false_sign_rate": 0.8333333333333334,
+    "run_b_test_acc": 0.4773662551440329,
+    "run_b_macro_f1": 0.4612452067226135,
+    "run_b_no_sign_recall": 0.7096774193548387,
+    "run_b_false_sign_rate": 0.2903225806451613,
+    "mean_test_acc": 0.5553497942386831,
+    "mean_macro_f1": 0.5227995264213721,
+    "acc_diff": 0.1559670781893004,
+    "f1_diff": 0.12310863939751704
+  },
+  "LSTM": {
+    "run_a_test_acc": 0.5583333333333333,
+    "run_a_macro_f1": 0.4791631284407615,
+    "run_a_no_sign_recall": 0.2,
+    "run_a_false_sign_rate": 0.8,
+    "run_b_test_acc": 0.4773662551440329,
+    "run_b_macro_f1": 0.4751825524574322,
+    "run_b_no_sign_recall": 0.8709677419354839,
+    "run_b_false_sign_rate": 0.12903225806451613,
+    "mean_test_acc": 0.5178497942386832,
+    "mean_macro_f1": 0.4771728404490968,
+    "acc_diff": 0.08096707818930043,
+    "f1_diff": 0.003980575983329293
+  }
+}

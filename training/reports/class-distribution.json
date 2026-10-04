@@ -1,0 +1,77 @@
+{
+  "expected_classes": [
+    "water",
+    "help",
+    "hungry",
+    "need",
+    "want",
+    "hello",
+    "thankyou",
+    "NO_SIGN"
+  ],
+  "total_samples": 969,
+  "by_signer": {
+    "communicare-psl-dataset-signer-01-1790666363394.json": {
+      "signer": "signer-01",
+      "counts": {
+        "water": 30,
+        "help": 32,
+        "need": 30,
+        "hello": 30,
+        "thankyou": 30,
+        "NO_SIGN": 31,
+        "want": 30,
+        "hungry": 30
+      }
+    },
+    "communicare-psl-dataset-signer-02-1790930270476.json": {
+      "signer": "signer-02",
+      "counts": {
+        "water": 30,
+        "help": 30,
+        "need": 30,
+        "hello": 30,
+        "thankyou": 30,
+        "hungry": 30,
+        "want": 30,
+        "NO_SIGN": 30
+      }
+    },
+    "communicare-psl-dataset-signer-03-1791041167125.json": {
+      "signer": "signer-03",
+      "counts": {
+        "water": 21,
+        "help": 20,
+        "hungry": 20,
+        "need": 20,
+        "want": 20,
+        "hello": 20,
+        "thankyou": 20,
+        "NO_SIGN": 20
+      }
+    },
+    "communicare-psl-dataset-signer-04-1791045198241.json": {
+      "signer": "signer-03",
+      "counts": {
+        "water": 41,
+        "help": 41,
+        "hungry": 42,
+        "need": 40,
+        "want": 41,
+        "hello": 40,
+        "thankyou": 40,
+        "NO_SIGN": 40
+      }
+    }
+  },
+  "combined": {
+    "water": 122,
+    "help": 123,
+    "need": 120,
+    "hello": 120,
+    "thankyou": 120,
+    "NO_SIGN": 121,
+    "want": 121,
+    "hungry": 122
+  }
+}

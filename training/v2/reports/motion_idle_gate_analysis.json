@@ -1,0 +1,192 @@
+{
+  "class_motion_statistics": {
+    "water": {
+      "mean_velocity_avg": 0.08047357651715477,
+      "mean_velocity_std": 0.030405016580857366,
+      "mean_velocity_min": 0.02876414731144905,
+      "mean_velocity_max": 0.1642330139875412,
+      "wrist_velocity_avg": 0.0,
+      "wrist_velocity_min": 0.0,
+      "wrist_velocity_max": 0.0,
+      "presence_ratio_avg": 0.988611110051473,
+      "presence_ratio_min": 0.8333333134651184
+    },
+    "help": {
+      "mean_velocity_avg": 0.07301822875536257,
+      "mean_velocity_std": 0.02243321691107393,
+      "mean_velocity_min": 0.04590631276369095,
+      "mean_velocity_max": 0.14647796750068665,
+      "wrist_velocity_avg": 0.0,
+      "wrist_velocity_min": 0.0,
+      "wrist_velocity_max": 0.0,
+      "presence_ratio_avg": 0.9938172044292573,
+      "presence_ratio_min": 0.8500000238418579
+    },
+    "hungry": {
+      "mean_velocity_avg": 0.1311149846141537,
+      "mean_velocity_std": 0.05717074959177969,
+      "mean_velocity_min": 0.059939946979284286,
+      "mean_velocity_max": 0.26617011427879333,
+      "wrist_velocity_avg": 0.0,
+      "wrist_velocity_min": 0.0,
+      "wrist_velocity_max": 0.0,
+      "presence_ratio_avg": 0.851111110051473,
+      "presence_ratio_min": 0.5166666507720947
+    },
+    "need": {
+      "mean_velocity_avg": 0.020878125432257852,
+      "mean_velocity_std": 0.005976000163297861,
+      "mean_velocity_min": 0.009356988593935966,
+      "mean_velocity_max": 0.038530122488737106,
+      "wrist_velocity_avg": 0.0,
+      "wrist_velocity_min": 0.0,
+      "wrist_velocity_max": 0.0,
+      "presence_ratio_avg": 0.9869444439808528,
+      "presence_ratio_min": 0.5333333611488342
+    },
+    "want": {
+      "mean_velocity_avg": 0.16077004907031853,
+      "mean_velocity_std": 0.07173225653206622,
+      "mean_velocity_min": 0.07136821001768112,
+      "mean_velocity_max": 0.3254885971546173,
+      "wrist_velocity_avg": 0.0,
+      "wrist_velocity_min": 0.0,
+      "wrist_velocity_max": 0.0,
+      "presence_ratio_avg": 0.9777777781089146,
+      "presence_ratio_min": 0.6833333373069763
+    },
+    "hello": {
+      "mean_velocity_avg": 0.09957805743130545,
+      "mean_velocity_std": 0.05050067069745682,
+      "mean_velocity_min": 0.011026154272258282,
+      "mean_velocity_max": 0.22271965444087982,
+      "wrist_velocity_avg": 0.0,
+      "wrist_velocity_min": 0.0,
+      "wrist_velocity_max": 0.0,
+      "presence_ratio_avg": 0.9775000000993411,
+      "presence_ratio_min": 0.21666666865348816
+    },
+    "thankyou": {
+      "mean_velocity_avg": 0.0918986967454354,
+      "mean_velocity_std": 0.02723254189836416,
+      "mean_velocity_min": 0.04616435989737511,
+      "mean_velocity_max": 0.17163757979869843,
+      "wrist_velocity_avg": 0.0,
+      "wrist_velocity_min": 0.0,
+      "wrist_velocity_max": 0.0,
+      "presence_ratio_avg": 0.9538888901472091,
+      "presence_ratio_min": 0.7333333492279053
+    },
+    "NO_SIGN": {
+      "mean_velocity_avg": 0.0707747080958769,
+      "mean_velocity_std": 0.03910634314498495,
+      "mean_velocity_min": 0.019180966541171074,
+      "mean_velocity_max": 0.19169266521930695,
+      "wrist_velocity_avg": 0.0,
+      "wrist_velocity_min": 0.0,
+      "wrist_velocity_max": 0.0,
+      "presence_ratio_avg": 0.983060109810751,
+      "presence_ratio_min": 0.6666666865348816
+    }
+  },
+  "motion_gate_threshold_evaluations": [
+    {
+      "motion_threshold": 0.001,
+      "no_sign_correctly_gated_idle": 0.0,
+      "real_signs_falsely_blocked_rate": 0.0,
+      "per_class_falsely_blocked": {
+        "water": 0.0,
+        "help": 0.0,
+        "hungry": 0.0,
+        "need": 0.0,
+        "want": 0.0,
+        "hello": 0.0,
+        "thankyou": 0.0
+      }
+    },
+    {
+      "motion_threshold": 0.002,
+      "no_sign_correctly_gated_idle": 0.0,
+      "real_signs_falsely_blocked_rate": 0.0,
+      "per_class_falsely_blocked": {
+        "water": 0.0,
+        "help": 0.0,
+        "hungry": 0.0,
+        "need": 0.0,
+        "want": 0.0,
+        "hello": 0.0,
+        "thankyou": 0.0
+      }
+    },
+    {
+      "motion_threshold": 0.003,
+      "no_sign_correctly_gated_idle": 0.0,
+      "real_signs_falsely_blocked_rate": 0.0,
+      "per_class_falsely_blocked": {
+        "water": 0.0,
+        "help": 0.0,
+        "hungry": 0.0,
+        "need": 0.0,
+        "want": 0.0,
+        "hello": 0.0,
+        "thankyou": 0.0
+      }
+    },
+    {
+      "motion_threshold": 0.005,
+      "no_sign_correctly_gated_idle": 0.0,
+      "real_signs_falsely_blocked_rate": 0.0,
+      "per_class_falsely_blocked": {
+        "water": 0.0,
+        "help": 0.0,
+        "hungry": 0.0,
+        "need": 0.0,
+        "want": 0.0,
+        "hello": 0.0,
+        "thankyou": 0.0
+      }
+    },
+    {
+      "motion_threshold": 0.008,
+      "no_sign_correctly_gated_idle": 0.0,
+      "real_signs_falsely_blocked_rate": 0.0,
+      "per_class_falsely_blocked": {
+        "water": 0.0,
+        "help": 0.0,
+        "hungry": 0.0,
+        "need": 0.0,
+        "want": 0.0,
+        "hello": 0.0,
+        "thankyou": 0.0
+      }
+    },
+    {
+      "motion_threshold": 0.01,
+      "no_sign_correctly_gated_idle": 0.0,
+      "real_signs_falsely_blocked_rate": 0.002369668246445498,
+      "per_class_falsely_blocked": {
+        "water": 0.0,
+        "help": 0.0,
+        "hungry": 0.0,
+        "need": 0.016666666666666666,
+        "want": 0.0,
+        "hello": 0.0,
+        "thankyou": 0.0
+      }
+    },
+    {
+      "motion_threshold": 0.015,
+      "no_sign_correctly_gated_idle": 0.0,
+      "real_signs_falsely_blocked_rate": 0.03317535545023697,
+      "per_class_falsely_blocked": {
+        "water": 0.0,
+        "help": 0.0,
+        "hungry": 0.0,
+        "need": 0.21666666666666667,
+        "want": 0.0,
+        "hello": 0.016666666666666666,
+        "thankyou": 0.0
+      }
+    }
+  ]
+}

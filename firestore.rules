@@ -1,0 +1,41 @@
+rules_version = '2';
+service cloud.firestore {
+ match /databases/{database}/documents {
+  function validState(s) {
+   return s is map
+    && s.keys().hasAll(['version','activeProfileId','profiles','language','preferences','customPhrases','phraseHistory','frequentlyUsed','updatedAt'])
+    && s.keys().hasOnly(['version','activeProfileId','profiles','language','preferences','customPhrases','phraseHistory','frequentlyUsed','updatedAt'])
+    && s.version == 3 && s.updatedAt is number && s.updatedAt >= 0
+    && s.activeProfileId is string && s.activeProfileId.size() <= 80
+    && s.language in ['english','urdu']
+    && s.profiles is list && s.profiles.size() > 0 && s.profiles.size() <= 20
+    && s.customPhrases is list && s.customPhrases.size() <= 100
+    && s.phraseHistory == [] && s.frequentlyUsed == {}
+    && s.preferences is map
+    && s.preferences.keys().hasAll(['speechRate','speechPitch','speechVolume','preferredVoiceLang','messageMode','highContrast','audioFeedback','signLanguageEnabled','emotionSupportEnabled','selectedEmotion'])
+    && s.preferences.keys().hasOnly(['speechRate','speechPitch','speechVolume','preferredVoiceLang','messageMode','highContrast','audioFeedback','signLanguageEnabled','emotionSupportEnabled','selectedEmotion'])
+    && s.preferences.speechRate is number && s.preferences.speechRate >= 0.5 && s.preferences.speechRate <= 1.5
+    && s.preferences.speechPitch is number && s.preferences.speechPitch >= 0.5 && s.preferences.speechPitch <= 1.5
+    && s.preferences.speechVolume is number && s.preferences.speechVolume >= 0 && s.preferences.speechVolume <= 1
+    && s.preferences.preferredVoiceLang in ['auto','en','ur'] && s.preferences.messageMode in ['word','sentence']
+    && s.preferences.highContrast is bool && s.preferences.audioFeedback is bool
+    && s.preferences.signLanguageEnabled is bool && s.preferences.emotionSupportEnabled is bool
+    && s.preferences.selectedEmotion in ['none','calm','sad','stressed','uncomfortable','angry','tired'];
+  }
+  function validBackup() {
+   let d=request.resource.data;
+   return d.revision is string && d.revision.size() == 36 && d.deleted is bool
+    && ((d.deleted == true && d.keys().hasOnly(['revision','deleted']))
+      || (d.deleted == false && d.keys().hasOnly(['revision','deleted','state']) && validState(d.state)));
+  }
+  match /userStates/{userId} {
+   allow read: if request.auth != null && request.auth.uid == userId;
+   allow create: if request.auth != null && request.auth.uid == userId && validBackup();
+   allow update: if request.auth != null && request.auth.uid == userId && validBackup()
+    && (!('revision' in resource.data) || request.resource.data.revision != resource.data.revision);
+   // Deletion replaces content with a revision marker so stale creates cannot resurrect it.
+   allow delete: if false;
+  }
+  match /{document=**} { allow read, write: if false; }
+ }
+}

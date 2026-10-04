@@ -1,0 +1,167 @@
+{
+  "run_name": "run_a_lstm",
+  "model_type": "LSTM",
+  "training_accuracy": 0.8917526006698608,
+  "best_validation_accuracy": 0.8571428656578064,
+  "test_accuracy": 0.5583333333333333,
+  "macro_precision": 0.5461776664370741,
+  "macro_recall": 0.5583333333333333,
+  "macro_f1": 0.4791631284407615,
+  "weighted_f1": 0.4791631284407615,
+  "per_class_metrics": {
+    "water": {
+      "precision": 0.49056603773584906,
+      "recall": 0.8666666666666667,
+      "f1": 0.6265060240963856,
+      "support": 30
+    },
+    "help": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 30
+    },
+    "hungry": {
+      "precision": 0.7586206896551724,
+      "recall": 0.7333333333333333,
+      "f1": 0.7457627118644068,
+      "support": 30
+    },
+    "need": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571428571428571,
+      "support": 30
+    },
+    "want": {
+      "precision": 0.75,
+      "recall": 0.1,
+      "f1": 0.17647058823529413,
+      "support": 30
+    },
+    "hello": {
+      "precision": 0.4838709677419355,
+      "recall": 1.0,
+      "f1": 0.6521739130434783,
+      "support": 30
+    },
+    "thankyou": {
+      "precision": 0.38636363636363635,
+      "recall": 0.5666666666666667,
+      "f1": 0.4594594594594595,
+      "support": 30
+    },
+    "NO_SIGN": {
+      "precision": 0.75,
+      "recall": 0.2,
+      "f1": 0.3157894736842105,
+      "support": 30
+    }
+  },
+  "no_sign_safety": {
+    "precision": 0.75,
+    "recall": 0.2,
+    "f1": 0.3157894736842105,
+    "support": 30,
+    "false_sign_activations": 24,
+    "false_sign_activation_rate": 0.8,
+    "confusions": {
+      "thankyou": 4,
+      "water": 5,
+      "hungry": 1,
+      "want": 1,
+      "need": 4,
+      "hello": 9
+    }
+  },
+  "real_sign_rejection": {
+    "count": 2,
+    "rate": 0.009523809523809525,
+    "breakdown": {
+      "water": 1,
+      "help": 1
+    }
+  },
+  "confusion_matrix": [
+    [
+      26,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      6,
+      0,
+      23,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      22,
+      0,
+      0,
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      12,
+      0,
+      0,
+      0,
+      3,
+      0,
+      15,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      3,
+      0,
+      0,
+      0,
+      17,
+      0
+    ],
+    [
+      5,
+      0,
+      1,
+      4,
+      1,
+      9,
+      4,
+      6
+    ]
+  ]
+}

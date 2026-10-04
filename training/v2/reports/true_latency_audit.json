@@ -1,0 +1,102 @@
+[
+  {
+    "config_name": "exp01_24frame_pos_gru_crop",
+    "classification": "TRUE_STREAMING",
+    "model_input_frames": 24,
+    "actual_source_frames": 24,
+    "actual_source_history_seconds": 0.8,
+    "preprocessing_latency_ms": 0.5,
+    "inference_latency_ms": 157.22,
+    "total_first_decision_latency_ms": 957.7
+  },
+  {
+    "config_name": "exp02_30frame_pos_gru_crop",
+    "classification": "TRUE_STREAMING",
+    "model_input_frames": 30,
+    "actual_source_frames": 30,
+    "actual_source_history_seconds": 1.0,
+    "preprocessing_latency_ms": 0.5,
+    "inference_latency_ms": 154.31,
+    "total_first_decision_latency_ms": 1154.8
+  },
+  {
+    "config_name": "exp03_24frame_posvel_gru_crop",
+    "classification": "TRUE_STREAMING",
+    "model_input_frames": 24,
+    "actual_source_frames": 24,
+    "actual_source_history_seconds": 0.8,
+    "preprocessing_latency_ms": 0.5,
+    "inference_latency_ms": 158.03,
+    "total_first_decision_latency_ms": 958.5
+  },
+  {
+    "config_name": "exp04_30frame_posvel_gru_crop",
+    "classification": "TRUE_STREAMING",
+    "model_input_frames": 30,
+    "actual_source_frames": 30,
+    "actual_source_history_seconds": 1.0,
+    "preprocessing_latency_ms": 0.5,
+    "inference_latency_ms": 153.93,
+    "total_first_decision_latency_ms": 1154.4
+  },
+  {
+    "config_name": "exp05_24frame_posvel_conv1d_gru_crop",
+    "classification": "TRUE_STREAMING",
+    "model_input_frames": 24,
+    "actual_source_frames": 24,
+    "actual_source_history_seconds": 0.8,
+    "preprocessing_latency_ms": 0.5,
+    "inference_latency_ms": 152.54,
+    "total_first_decision_latency_ms": 953.0
+  },
+  {
+    "config_name": "exp06_30frame_posvel_conv1d_gru_crop",
+    "classification": "TRUE_STREAMING",
+    "model_input_frames": 30,
+    "actual_source_frames": 30,
+    "actual_source_history_seconds": 1.0,
+    "preprocessing_latency_ms": 0.5,
+    "inference_latency_ms": 187.27,
+    "total_first_decision_latency_ms": 1187.8
+  },
+  {
+    "config_name": "exp07_24frame_compactmotion_gru_crop",
+    "classification": "TRUE_STREAMING",
+    "model_input_frames": 24,
+    "actual_source_frames": 24,
+    "actual_source_history_seconds": 0.8,
+    "preprocessing_latency_ms": 0.5,
+    "inference_latency_ms": 174.95,
+    "total_first_decision_latency_ms": 975.5
+  },
+  {
+    "config_name": "exp08_30frame_compactmotion_gru_crop",
+    "classification": "TRUE_STREAMING",
+    "model_input_frames": 30,
+    "actual_source_frames": 30,
+    "actual_source_history_seconds": 1.0,
+    "preprocessing_latency_ms": 0.5,
+    "inference_latency_ms": 154.29,
+    "total_first_decision_latency_ms": 1154.8
+  },
+  {
+    "config_name": "exp09_24frame_posvel_gru_resample",
+    "classification": "REQUIRES_LONGER_SOURCE_HISTORY",
+    "model_input_frames": 24,
+    "actual_source_frames": 60,
+    "actual_source_history_seconds": 2.0,
+    "preprocessing_latency_ms": 1.8,
+    "inference_latency_ms": 168.51,
+    "total_first_decision_latency_ms": 2170.3
+  },
+  {
+    "config_name": "exp10_30frame_posvel_gru_resample",
+    "classification": "REQUIRES_LONGER_SOURCE_HISTORY",
+    "model_input_frames": 30,
+    "actual_source_frames": 60,
+    "actual_source_history_seconds": 2.0,
+    "preprocessing_latency_ms": 1.8,
+    "inference_latency_ms": 151.14,
+    "total_first_decision_latency_ms": 2152.9
+  }
+]
